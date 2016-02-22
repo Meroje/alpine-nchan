@@ -5,7 +5,7 @@ MAINTAINER Jérôme Foray <moi@foray-jero.me>
 ENV NGINX_VERSION nginx-1.9.11
 ENV NCHAN_VERSION 0.99.5
 ENV HEADERS_MORE_VERSION 0.29
-ENV LUA_VERSION 0.9.20
+ENV LUA_VERSION 0.10.0
 ENV NDK_VERSION 0.2.19
 
 RUN apk --update add ca-certificates libatomic_ops-dev openssl-dev pcre-dev zlib-dev luajit-dev wget build-base && \
