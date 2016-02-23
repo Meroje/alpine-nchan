@@ -1,4 +1,4 @@
-FROM alpine:3.3
+FROM alpine:latest
 
 MAINTAINER Jérôme Foray <moi@foray-jero.me>
 
@@ -63,10 +63,6 @@ RUN apk --update add ca-certificates libatomic_ops-dev openssl-dev pcre-dev zlib
 # forward request and error logs to docker log collector
 RUN ln -sf /dev/stdout /var/log/nginx/access.log
 RUN ln -sf /dev/stderr /var/log/nginx/error.log
-
-VOLUME ["/etc/nginx/sites-enabled", "/etc/nginx/certs", "/etc/nginx/conf.d", "/var/log/nginx", "/var/www/html"]
-
-WORKDIR /etc/nginx
 
 EXPOSE 80 443
 
