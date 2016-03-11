@@ -3,7 +3,7 @@ FROM alpine:latest
 MAINTAINER Jérôme Foray "moi@foray-jero.me"
 
 ENV NGINX_VERSION 1.9.12
-ENV NCHAN_VERSION 0.99.5
+ENV NCHAN_VERSION 0.99.7
 
 ENV GPG_KEYS B0F4253373F8F6F510D42178520A9993A1C052F8
 ENV CONFIG "\
@@ -44,7 +44,6 @@ ENV CONFIG "\
     --with-http_v2_module \
     --with-ipv6 \
     --add-module=/usr/src/nchan-${NCHAN_VERSION} \
-    --with-cc-opt=-Wno-maybe-uninitialized \
     "
 
 RUN \
