@@ -2,10 +2,10 @@ FROM alpine:latest
 
 MAINTAINER Jérôme Foray <moi@foray-jero.me>
 
-ENV NGINX_VERSION nginx-1.11.2
-ENV NCHAN_VERSION 0.99.16
-ENV HEADERS_MORE_VERSION 0.30
-ENV LUA_VERSION 0.10.5
+ENV NGINX_VERSION nginx-1.11.5
+ENV NCHAN_VERSION 1.0.3
+ENV HEADERS_MORE_VERSION 0.31
+ENV LUA_VERSION 0.10.6
 ENV NDK_VERSION 0.3.0
 
 RUN apk --update add ca-certificates libatomic_ops-dev openssl-dev pcre-dev zlib-dev luajit-dev wget build-base && \
